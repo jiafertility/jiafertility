@@ -1,0 +1,13 @@
+{
+  "name": "jiafertility",
+  "version": "1.0.0",
+  "description": "JIA Fertility - Fertility care without borders",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.1.1"
+  }
+}
