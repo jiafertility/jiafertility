@@ -67,7 +67,7 @@
       font-family: 'Figtree', sans-serif;
       font-weight: 700;
       font-style: italic;
-      font-size: clamp(14px, 1.8vw, 17px);
+      font-size: clamp(23px, 3vw, 29px) !important;
       color: #1a1a1a;
       margin-bottom: 16px;
       letter-spacing: -0.01em;
@@ -79,6 +79,7 @@
       font-weight: 300;
       font-size: clamp(14px, 1.8vw, 17px);
       color: #444;
+      line-height: 1.4;
       margin-bottom: 34px;
     }
 
@@ -131,7 +132,7 @@
       font-weight: 300;
       font-size: clamp(15px, 1.8vw, 17px);
       color: #2a2a2a;
-      line-height: 1.75;
+      line-height: 1.4;
       white-space: nowrap;
     }
 
@@ -537,14 +538,14 @@
   <!-- Glass card -->
   <div class="glass-card">
     <h1 class="headline">Fertility care without borders</h1>
-    <p class="subheadline">JIA connects you to English-speaking world-class clinics abroad.<br>Partner clinics have resort-quality facilities and success rates that rival clinics in America at 50 – 70% of the cost.</p>
+    <p class="subheadline">JIA connects you to English-speaking world-class clinics abroad.<br>Partner clinics have resort-quality facilities and success rates that rival clinics in America<br>at 50 – 70% of the cost.</p>
 
     <button class="btn-waitlist" onclick="openModal()">
       <img src="Join the Waitlist White.png" alt="Join the waitlist" style="height:36px;width:auto;display:block;" />
     </button>
 
     <div class="body-text">
-      <p>Compare costs across top clinics, find the right doctor, watch real patient testimonials, and chat &amp; book directly in JIA, at zero cost to you.</p>
+      <p>Compare costs across top clinics, find the right doctor, watch real patient testimonials,<br>and chat &amp; book directly in JIA, at zero cost to you.</p>
     </div>
   </div>
 
@@ -925,5 +926,13 @@
     initCombo('procedureCombo', 'procedureSearch', 'procedureList', PROCEDURES);
   </script>
 
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LCJCQDNVH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0LCJCQDNVH');
+  </script>
 </body>
 </html>
