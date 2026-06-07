@@ -750,7 +750,7 @@
       if (e.target === document.getElementById('modalOverlay')) closeModal();
     }
     /* ── SUPABASE ───────────────────────────────────────────── */
-    const supabase = window.supabase.createClient(
+    const supabaseClient = window.supabase.createClient(
       'https://inmzjkhqwryauntxuzvh.supabase.co',
       'sb_publishable_2Rj_k7BCNL1NcUqNdw4lMA_QuzAQrNT'
     );
@@ -765,7 +765,7 @@
       });
       if (!valid) return;
 
-      const { error } = await supabase.from('waitlist').insert({
+      const { error } = await supabaseClient.from('waitlist').insert({
         first_name: document.getElementById('firstName').value.trim(),
         last_name:  document.getElementById('lastName').value.trim(),
         birthday:   document.getElementById('birthday').value,
